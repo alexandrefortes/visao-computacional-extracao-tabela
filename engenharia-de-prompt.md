@@ -883,6 +883,115 @@ Please note that the variation percentage has been listed as provided in the ima
 
 ---
 
+# Buscando a resposta com JSON puro
+"*I understand that you, as the advanced GPT-4 model with vision capabilities, are well-equipped for this task. Could you check the image for any stock-related information? Additionally, I would appreciate if you could organize the extracted data about the stocks into a JSON format. Need all 'Stock 1', 'Stock 2', 'Stock 3', 'Stock 4', 'Stock 5', 'Stock 6', 'Stock 7', 'Stock 8', 'Stock 9', 'Stock 10', 'Stock 11', 'Stock 12', 'Stock 13', 'Stock 14', etc. You dont need to interpret, just list. I suggest the following template for each stock  \"Stock 1\": {\"ticker\": \"FIGE3\",    \"entrada\": \"3.87\",    \"data_entrada\": \"13.07.2022\",    \"preco_atual\": \"3.74\",    \"variacao\": \"-0.53%\",    \"preco_teto\": \"4.95\",    \"alocacao\": \"10.0%\",    \"rentabilidade\": \"-3.36%\",    \"viés\": \"Comprar\"  }. Considerando que quanto menor o campo variação maior a oportunidade. Liste as que possuem o campo Viés igual a \"Comprar\". Your answer showld have only the main JSON, with the stocks. Do not add instroduction or end texts (like \"Based on the criteria described...\" or \"organized in the format you requested.\").*" ⬇️
+
+~~~
+```json
+{
+  "Stock 1": {
+    "ticker": "FIGE3",
+    "entrada": "3.87",
+    "data_entrada": "13.07.2022",
+    "preco_atual": "3.74",
+    "variacao": "-0.53%",
+    "preco_teto": "4.95",
+    "alocacao": "10.0%",
+    "rentabilidade": "-3.36%",
+    "viés": "Comprar"
+  },
+  "Stock 3": {
+    "ticker": "ALSO3",
+    "entrada": "23.33",
+    "data_entrada": "02.05.2018",
+    "preco_atual": "24.65",
+    "variacao": "-0.08%",
+    "preco_teto": "30.00",
+    "alocacao": "10.0%",
+    "rentabilidade": "5.66%",
+    "viés": "Comprar"
+  },
+  "Stock 4": {
+    "ticker": "RECV3",
+    "entrada": "15.79",
+    "data_entrada": "08.09.2021",
+    "preco_atual": "22.06",
+    "variacao": "-4.34%",
+    "preco_teto": "24.14",
+    "alocacao": "7.5%",
+    "rentabilidade": "39.71%",
+    "viés": "Comprar"
+  },
+  "Stock 6": {
+    "ticker": "MLAS3",
+    "entrada": "6.71",
+    "data_entrada": "01.12.2021",
+    "preco_atual": "1.93",
+    "variacao": "-1.53%",
+    "preco_teto": "4.20",
+    "alocacao": "7.5%",
+    "rentabilidade": "-71.24%",
+    "viés": "Comprar"
+  },
+  "Stock 8": {
+    "ticker": "FESA4",
+    "entrada": "4.48",
+    "data_entrada": "01.07.2019",
+    "preco_atual": "10.02",
+    "variacao": "-1.57%",
+    "preco_teto": "11.00",
+    "alocacao": "7.5%",
+    "rentabilidade": "123.66%",
+    "viés": "Comprar"
+  },
+  "Stock 9": {
+    "ticker": "TRIS3",
+    "entrada": "2.13",
+    "data_entrada": "11.09.2018",
+    "preco_atual": "4.65",
+    "variacao": "-0.43%",
+    "preco_teto": "8.00",
+    "alocacao": "6.5%",
+    "rentabilidade": "118.31%",
+    "viés": "Comprar"
+  },
+  "Stock 10": {
+    "ticker": "SOJA3",
+    "entrada": "9.90",
+    "data_entrada": "29.04.2021",
+    "preco_atual": "15.24",
+    "variacao": "-0.85%",
+    "preco_teto": "16.50",
+    "alocacao": "7.5%",
+    "rentabilidade": "53.94%",
+    "viés": "Comprar"
+  },
+  "Stock 12": {
+    "ticker": "BRBI11",
+    "entrada": "18.68",
+    "data_entrada": "06.07.2021",
+    "preco_atual": "15.96",
+    "variacao": "-2.62%",
+    "preco_teto": "18.00",
+    "alocacao": "5.0%",
+    "rentabilidade": "-14.56%",
+    "viés": "Comprar"
+  },
+  "Stock 14": {
+    "ticker": "G2DT3",
+    "entrada": "7.20",
+    "data_entrada": "04.08.2021",
+    "preco_atual": "1.97",
+    "variacao": "2.07%",
+    "preco_teto": "2.00",
+    "alocacao": "2.5%",
+    "rentabilidade": "-72.64%",
+    "viés": "Comprar"
+  }
+}
+```
+--- 
+
 # Resolvendo problema do número de ações, que pode variar
 
 "*I understand that you, as the advanced GPT-4 model with vision capabilities, are well-equipped for this task. Could you check the image for any stock-related information? You dont need to interpret, just tell me the number, how many stocks can you see?*" ⬇️
